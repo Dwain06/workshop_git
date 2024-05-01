@@ -25,6 +25,12 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.thisIsMyString).toEqual('thisIsMyString');
   });
+  
+  it(`should have the 'ceci est ma propriété' property`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.myProperty).toEqual('ceci est ma propriété');
+  });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
